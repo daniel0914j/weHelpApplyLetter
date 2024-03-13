@@ -67,3 +67,68 @@ body {
     height: 100%;
     object-fit: cover;
 } 
+
+
+/* 螢幕寬度 1250px 以上 */
+@media screen and (min-width: 1250px) {
+    body {
+      padding: 0 20px;
+    }
+   
+    .container {
+      max-width: 1200px;
+    }
+   
+    .des {
+      width: 100%;
+    }
+   
+    .des-2 {
+      width: calc(100% - 220px);
+    }
+   }
+   
+   /* 螢幕寬度 1250px - 500px 之間 */
+   @media screen and (max-width: 1249px) and (min-width: 500px) {
+    .container {
+      max-width: 800px;
+    }
+   
+    .des {
+      width: 100%;
+    }
+   
+    .des-2 {
+      width: calc(100% - 220px);
+    }
+   }
+   
+   /* 螢幕寬度 500px 以下 */
+   @media screen and (max-width: 499px) {
+    .container {
+      max-width: 100%;
+      padding: 10px;
+    }
+   
+    .des {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+    }
+   
+    .des-1 {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+   
+    .des-2 {
+      width: 100%;
+    }
+   
+    .avatar-container {
+      margin-left: 0;
+      margin-top: 10px;
+      width: 100px;
+      height: 150px;
+    }
+   }
