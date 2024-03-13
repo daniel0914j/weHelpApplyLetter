@@ -37,13 +37,14 @@ body {
     border-radius: 5px;
     padding: 10px;
     width:800px;
+    
 }
 
 .des-1 {
-    font-weight: bold;
     margin-right: 20px;
     width: 200px;
     text-align: justify;
+    font-weight: bold;
 }
 
 .des-2 {
@@ -51,7 +52,7 @@ body {
     text-align: justify;
     line-height: 1.5; 
     margin-bottom: 1rem;
-    width:600px;
+    width:600px; 
 }
 
 .avatar-container {
@@ -69,24 +70,7 @@ body {
 } 
 
 
-/* 螢幕寬度 1250px 以上 */
-@media screen and (min-width: 1250px) {
-    body {
-      padding: 0 20px;
-    }
-   
-    .container {
-      max-width: 1200px;
-    }
-   
-    .des {
-      width: 100%;
-    }
-   
-    .des-2 {
-      width: calc(100% - 220px);
-    }
-   }
+
    
    /* 螢幕寬度 1250px - 500px 之間 */
    @media screen and (max-width: 1249px) and (min-width: 500px) {
@@ -96,6 +80,7 @@ body {
    
     .des {
       width: 100%;
+     
     }
    
     .des-2 {
@@ -126,9 +111,6 @@ body {
     }
    
     .avatar-container {
-      margin-left: 0;
-      margin-top: 10px;
-      width: 100px;
-      height: 150px;
+      display:none;
     }
    }
